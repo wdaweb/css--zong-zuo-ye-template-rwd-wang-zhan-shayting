@@ -1,0 +1,71 @@
+.inspiration {
+  background-color: $bg-light;
+  padding: 80px 0;
+  text-align: center;
+  @include xl {
+    padding: 80px 120px;
+  }
+  .inspiration-title {
+    padding: 10px;
+    margin-bottom: 60px;
+    letter-spacing: -2px;
+    @include md {
+      font-size: 48px;
+    }
+  }
+}
+.inspiration-content {
+  padding: 0 10px;
+  @include md {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @include lg{
+    flex-wrap: nowrap;
+  }
+}
+
+.inspiration-box {
+  &:nth-child(2) {
+    margin: 30px 0;
+    @include md {
+      margin-top: 100px;
+    }
+  }
+  h6 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: $secondary;
+    opacity: 1;
+  }
+  p {
+    opacity: 0.7;
+    color: $gray;
+    padding: 0 5%;
+    line-height: 1.5;
+    position: relative;
+    @include md {
+      padding-right: 10%;
+      padding-left: 30px;
+      &::before {
+        content: "";
+        width: 12px;
+        height: 12px;
+        background: $secondary;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 6px;
+      }
+    }
+  }
+  @include md {
+    width: 50%;
+    text-align: left;
+  }
+  @include lg {
+    width: 33.333333%;
+    text-align: left;
+  }
+}

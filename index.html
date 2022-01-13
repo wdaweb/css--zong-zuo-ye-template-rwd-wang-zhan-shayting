@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <!-- google font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <!-- swiper js -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <!-- magnific lightbox -->
+  <link rel="stylesheet" href="./css/magnific-popup.css">
+  <!-- magnific lightbox self -->
+  <link rel="stylesheet" href="./css/magnific-popup_self.css">
+  <!-- animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="./css/all.css">
+  <title>Wandau | Art & History Museum</title>
+</head>
+
+<body>
+  <!-- header -->
+  <div class="header">
+    <div class="navbar">
+      <div class="navbar-logo">
+        <a href="#">
+          <img src="./images/logo@2x.png" alt="Wandau | Art & History Museum"></a>
+      </div>
+      <div class="navbar-menu">
+        <ul class="navbar-lang">
+          <li><a href="#">Eng</a></li>
+          <li><a href="#">Rus</a></li>
+        </ul>
+        <ul class="navbar-menu-list">
+          <li><a href="#">Visit</a></li>
+          <li><a href="#">Exhibition</a></li>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+
+      </div>
+      <class class="navbar-item">
+        <div class="search">
+          <i class="fas fa-search fa-md"></i>
+        </div>
+        <div id="hamburger-menu">
+          <input type="checkbox">
+          <span></span>
+          <span></span>
+          <span></span>
+          <div id="aside">
+            <div id="aside-logo"><img src="./images/logo-light.png" alt="logo"></div>
+            <ul class="language">
+              <li>Eng</li>
+              <li>Rus</li>
+            </ul>
+            <ul class="menu">
+              <li><a href="#">Visit</a></li>
+              <li><a href="#">Exhibitions</a></li>
+              <li><a href="#">Collections</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="aside-content">
+              <div class="aside-content-inner">
+                <img src="./images/image07.jpg" alt="">
+                <p class="fs-17">It speedily me addition <strong>weddings vicinity</strong> in pleasure. Happiness
+                  commanded an conveying breakfast in. Regard her say
+                  warmly elinor. Him these are visit front end for <u>seven walls</u>. Money eat scale now ask law
+                  learn.</p>
+                <h6 class="font-cinzel fs-26">Opening Hours</h6>
+                <p class="fs-17">
+                  Tuesday ‒ Friday: 09:00 ‒ 17:00<br>
+                  Friday ‒ Monday: 10:00 ‒ 20:00
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="navbar-btn">
+          <a href="#">GET A TICKET</a>
+        </div>
+    </div>
+    <!-- 背景swiper -->
+    <div id="bgSlide" class="swiper">
+      <div class="swiper-wrapper">
+        <div id="slide-1" class="swiper-slide">
+        </div>
+        <div id="slide-2" class="swiper-slide">
+        </div>
+        <div id="slide-3" class="swiper-slide">
+        </div>
+      </div>
+    </div>
+    <!-- 文字swiper -->
+    <div id="textSlide" class="mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide-text">
+          <h1 class="font-cinzel">MUSEUMS AND GALLERIES</h1>
+          <p class="fs-19">Explore hundreds of museums, galleries and historic places across the UK.</p>
+        </div>
+        <div class="swiper-slide slide-text">
+          <h1 class="font-cinzel">DISCOVER OUR HISTORY</h1>
+          <p class="fs-19">Your support is vital and helps the Museum to share the collection with the world</p>
+        </div>
+        <div class="swiper-slide slide-text">
+          <h1 class="font-cinzel">THE ART OF NORTH AFRICA</h1>
+          <p class="fs-19">
+            Curator Peter Loovers explores the special relationship between Arctic Peoples and 'man's best friend'.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 換頁按鈕 -->
+    <div class="swiper-button-next">
+      <i class="fas fa-chevron-down fa-2xl"></i>
+    </div>
+    <div class="swiper-button-prev">
+      <i class="fas fa-chevron-up fa-2xl"></i>
+    </div>
+    <!-- 進度條 -->
+    <div class="swiper-pagination"></div>
+    <div class="swiper-pagination-2"></div>
+    <!-- videoplay -->
+    <div id="videoPlay">
+      <div id="play-circle">
+        <img src="./images/play-btn.png">
+      </div>
+      <a class="popup-youtube" href="https://www.youtube.com/watch?v=sU1HNvpHewg">
+        <img id="play" src="./images/play-icon.png" width="107" height="75">
+      </a>
+    </div>
+  </div>
+  <!-- about -->
+  <section class="about">
+    <div class="about-title">
+      <div class="titleLogo">
+        <img class="logo-sm" src="./images/title-shape.png" alt="">
+      </div>
+      <h2 class="font-cinzel">Art Inspiration of<br> 19th Century</h2>
+    </div>
+    <div class="about-content">
+      <div class="content-img">
+        <img class="wow animate__fadeIn" data-wow-duration="0.5s" src="./images/side-imag01.jpg" alt="image">
+      </div>
+      <div class="content-text">
+        <ul>
+          <li>
+            <img src="./images/icon01.png" alt="Opening times">
+            <div class="about-text">
+              <h5 class="font-cinzel">Opening times</h5>
+              <p class="fs-17">From 27 August Thursday – Sunday: 11.00-19.00</p>
+            </div>
+          </li>
+          <li>
+            <img src="./images/icon02.png" alt="Book Online">
+            <div class="about-text">
+              <h5 class="font-cinzel">Book Online</h5>
+              <p class="fs-17">Some exhibitions and events carry a separate charge <a href="#">Join Now and Book
+                  Online</a></p>
+            </div>
+          </li>
+          <li>
+            <img src="./images/icon03.png" alt="Where You Visit">
+            <div class="about-text">
+              <h5 class="font-cinzel">Where You Visit</h5>
+              <p class="fs-17">Cromwell New Street Road London, SW7 2RL</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- event -->
+  <section class="event">
+    <div class="event-title">
+      <div class="titleLogo">
+        <img class="logo-sm" src="./images/title-shape.png" alt="">
+      </div>
+      <h6 class="fs-14">DON’T MISS THE OPPORTUNITY</h6>
+      <h2 class="font-cinzel">Upcoming Events</h2>
+    </div>
+    <div class="event-content">
+      <div class="event-box">
+        <div class="box-img">
+          <div class="box-info">
+            <img class="infoImg" src="./images/icon-info.png" alt="info">
+            <span>50% off exhibitions</span>
+          </div>
+          <a href="#"><img class="eventImg wow animate__fadeIn" src="./images/event09.jpg" alt=""></a>
+        </div>
+        <div class="box-content">
+          <h4>
+            <a href="#" class="font-cinzel">Rome: city and empire</a>
+          </h4>
+          <p class="fs-17">15 August – 31 October 2020
+          </p>
+        </div>
+      </div>
+      <div class="event-box">
+        <div class="box-img">
+          <div class="box-info">
+            <img class="infoImg" src="./images/icon-info.png" alt="info">
+            <span>50% off exhibitions</span>
+          </div>
+          <a href="#"><img class="eventImg wow animate__fadeIn" src="./images/event08.jpg" alt=""></a>
+        </div>
+        <div class="box-content">
+          <h4>
+            <a href="#" class="font-cinzel">A Ming Emperor’s Kingdom</a>
+          </h4>
+          <p class="fs-17">15 August – 31 October 2020
+          </p>
+        </div>
+      </div>
+      <div class="event-box">
+        <div class="box-img">
+          <div class="box-info">
+            <img class="infoImg" src="./images/icon-info.png" alt="info">
+            <span>50% off exhibitions</span>
+          </div>
+          <a href="#"><img class="eventImg wow animate__fadeIn" src="./images/event07.jpg" alt=""></a>
+        </div>
+        <div class="box-content">
+          <h4>
+            <a href="#" class="font-cinzel">Living with art Picasso to Celmins</a>
+          </h4>
+          <p class="fs-17">15 August – 31 October 2020
+          </p>
+        </div>
+      </div>
+      <div class="event-button">
+        <a href="#">VIEW ALL UPCOMING EVENTS</a>
+      </div>
+    </div>
+  </section>
+  <!-- inspiration -->
+  <section class="inspiration">
+    <div class="inspiration-title">
+      <div class="titleLogo">
+        <img class="logo-sm" src="./images/title-shape.png" alt="">
+      </div>
+      <h2 class="font-cinzel">Art Inspiration of 19th<br>Century</h2>
+    </div>
+    <div class="inspiration-content">
+      <div class="inspiration-box">
+        <h6 class="font-cinzel">The CHALLENGE</h6>
+        <p class="fs-17">In the 1980s, “the UK’s national museums faced political pressure from the Conservative
+          government to charge
+          for
+          admission, to make them less dependent on government funding".</p>
+      </div>
+      <div class="inspiration-box">
+        <h6 class="font-cinzel">The INITIATIVE</h6>
+        <p class="fs-17">In 1997, the new Labour government made a commitment to reinstate free entry for national
+          museums in order to
+          have a
+          more diverse range of visitors. “Following a campaign led by the museums themselves,</p>
+      </div>
+      <div class="inspiration-box">
+        <h6 class="font-cinzel">The IMPACT</h6>
+        <p class="fs-17">The national museums which dropped charges all saw substantial increases to their visitor
+          numbers, an average
+          of 70
+          percent. In the first year after free admission was introduced visitor figures.</p>
+      </div>
+    </div>
+  </section>
+  <!-- gallery -->
+  <section class="gallery">
+    <div class="gallery-box"><img src="./images/image01.jpg" alt=""></div>
+    <div class="gallery-box"><img src="./images/image02.jpg" alt=""></div>
+    <div class="gallery-box"><img src="./images/image03.jpg" alt=""></div>
+    <div class="gallery-box"><img src="./images/image04.jpg" alt=""></div>
+  </section>
+  <!-- remind -->
+  <section class="remind">
+    <div class="remind-title">
+      <div class="titleLogo">
+        <img class="logo-sm" src="./images/title-shape.png" alt="">
+      </div>
+      <h6 class="fs-14">Visit the National Wandau Museum</h6>
+      <h2 class="font-cinzel">3 steps to be safe</h2>
+    </div>
+    <div class="remind-content">
+      <div class="remind-box">
+        <div class="box-icon">
+          <img src="./images/icon04.png" alt="">
+        </div>
+        <div class="remind-img">
+          <img class="wow animate__fadeIn" src="./images/image-content-box01.jpg" alt="">
+        </div>
+        <div class="remind-text">
+          <strong class="fs-17">.01</strong>
+          <h4 class="font-cinzel">Check What's Open</h4>
+          <div class="expand">
+            <p>Your safety is our first priority. Entry to the National Maritime Museum is still free, but to help us
+              ensure social
+              distancing.</p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="remind-box">
+        <div class="box-icon">
+          <img src="./images/icon05.png" alt="">
+        </div>
+        <div class="remind-img">
+          <img class="wow animate__fadeIn" src="./images/image-content-box02.jpg" alt="">
+        </div>
+        <div class="remind-text">
+          <strong class="fs-17">.02</strong>
+          <h4 class="font-cinzel">Booking Online</h4>
+          <div class="expand">
+            <p>Exhibition curator Venetia Porter presents this new exhibition of works by artists from Iran to Morocco
+              drawn from the
+              Museum collection.</p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="remind-box">
+        <div class="box-icon">
+          <img src="./images/icon06.png" alt="">
+        </div>
+        <div class="remind-img">
+          <img class="wow animate__fadeIn" src="./images/image-content-box03.jpg" alt="">
+        </div>
+        <div class="remind-text">
+          <strong class="fs-17">.03</strong>
+          <h4 class="font-cinzel">Keep Your Distance
+          </h4>
+          <div class="expand">
+            <p>Take a look at our past exhibitions and enjoy the articles, videos and photo galleries still available to
+              view online.</p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- collection -->
+  <section class="collection">
+    <div class="collection-content">
+      <div class="wrap">
+        <div id="titleSlide">
+          <div class="collection-title">
+            <h6>Art Collection</h6>
+            <h2 class="font-cinzel">History of Barnes</h2>
+          </div>
+          <div id="title-slide" class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <span class="font-cinzel">01</span>
+                <h3 class="font-cinzel">VENUS<br>DE MILO</h3>
+              </div>
+              <div class="swiper-slide">
+                <span class="font-cinzel">02</span>
+                <h3 class="font-cinzel">Les Demoiselles<br>d'Avignon</h3>
+              </div>
+              <div class="swiper-slide">
+                <span class="font-cinzel">03</span>
+                <h3 class="font-cinzel">MONA<br>LISA</h3>
+              </div>
+              <div class="swiper-slide">
+                <span class="font-cinzel">04</span>
+                <h3 class="font-cinzel">L'Arlesienne:<br>Madame Ginoux</h3>
+              </div>
+              <div class="swiper-slide">
+                <span class="font-cinzel">05</span>
+                <h3 class="font-cinzel">Cuckoo<br>Clocks</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="photoSlide" class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./images/art-slide01.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./images/art-slide03.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./images/art-slide04.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./images/art-slide05.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./images/art-slide01.jpg" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- video -->
+  <section class="video">
+    <div class="bg-video">
+      <video src="./video/video.mp4" autoplay muted playsinline loop></video>
+    </div>
+    <div class="overlay"></div>
+    <div class="video-title">
+      <h6>JOIN TODAY AND ENJOY UNLIMITED</h6>
+      <h2 class="font-cinzel">exhibitions, Members only and more</h2>
+      <a href="#">BECOME A MEMBER</a>
+    </div>
+
+  </section>
+  <!-- News -->
+  <section class="news">
+    <div class="news-title">
+      <div class="titleLogo">
+        <img class="logo-sm" src="./images/title-shape.png" alt="logo">
+      </div>
+      <h6>GET LATEST UPDATES AND NEWS</h6>
+      <h2>Get Latest Updates and News</h2>
+    </div>
+    <div class="news-content">
+      <div class="news-col">
+        <div class="news-img">
+          <img src="./images/recent-news01.jpg" alt="news01">
+        </div>
+        <div class="news-text">
+          <span>30th December, 2021</span>
+          <h3 class="font-cinzel">The Ultimate Guide To Knots Practice Kit</h3>
+          <p>Learn to tie over 250 knots with step-by-step instructions. Supplied with 4</p>
+          <a href="#">Continue reading</a>
+        </div>
+      </div>
+      <div class="news-col">
+        <div class="news-img">
+          <img src="./images/recent-news02.jpg" alt="news02">
+        </div>
+        <div class="news-text right-txt">
+          <span>30th December, 2021</span>
+          <h3 class="font-cinzel">Advantage but Practice Guide To Knots Kit</h3>
+          <p>Learn to tie over 250 knots with step-by-step instructions. Supplied with 4</p>
+          <a href="#">Continue reading</a>
+        </div>
+      </div>
+      <div class="btn-circle">
+        <a href="#">SEE ALL NEWS</a>
+      </div>
+    </div>
+  </section>
+  <!-- Subscribe -->
+  <section class="subscribe">
+    <div class="subscribe-box">
+      <div class="subscribe-form">
+        <h6>Subscribe Newsletter</h6>
+        <h2>Sign up to get the latest news</h2>
+        <div class="email-input">
+          <input type="email" placeholder="Enter your e-mail address">
+          <input type="submit" value="SIGN UP">
+        </div>
+        <span>Will be used in accordance with our <a href="#">Privacy Policy</a></span>
+      </div>
+      <div class="subscribe-img">
+        <img src="./images/newsletter-image.png" alt="">
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-box">
+        <h6 class="font-cinzel">ABOUT MUSEUM</h6>
+        <ul id="about-list">
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">National work</a></li>
+          <li><a href="#">International work</a></li>
+        </ul>
+      </div>
+      <div class="footer-box">
+        <h6 class="font-cinzel">CONNECT US</h6>
+        <ul id="connect-list">
+          <li><a href="#"><i class="fab fa-facebook-f"></i>/wandau-uk</a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i>/wandau-museum</a></li>
+          <li><a href="#"><i class="fab fa-youtube"></i>/wandau-tv</a></li>
+        </ul>
+      </div>
+      <div class="footer-box">
+        <h6 class="font-cinzel">VISIT US NOW</h6>
+        <ul id="visit-list">
+          <li>Cromwell Road New Town SW7</li>
+          <li><strong>London-England</strong></li>
+          <li><i class="fas fa-info-circle"></i>+44 (0)20 7942 2000</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy;2021 Wandau | Art & History</span>
+      <span>Site created by <a href="#">themezinho</a></span>
+    </div>
+  </footer>
+
+
+
+  <!-- jQuery -->
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <!-- swiper js -->
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <!-- wow.js -->
+  <script src="./js/wow.min.js"></script>
+  <!-- magnific lightbox -->
+  <script src="./js/jquery.magnific-popup.min.js"></script>
+  <!-- magnific lightbox self -->
+  <script src="./js/magnific-popup_self.js"></script>
+  <!-- self js -->
+  <script src="./js/app.js"></script>
+</body>
+
+</html>

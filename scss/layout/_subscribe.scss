@@ -1,0 +1,93 @@
+.subscribe {
+  background: $primary;
+  padding:0 5%;
+  h2 {
+    letter-spacing: -2px;
+    font-size: 34px;
+    margin-bottom: 30px;
+    @include md {
+      font-size: 48px;
+    }
+    @include lg {
+      font-size: 72px;
+    }
+  }
+  p {
+    color: $gray;
+  }
+  a {
+    color: $secondary;
+    text-decoration: underline;
+  }
+  h6{
+    opacity: 1;
+  }
+  .subscribe-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 12px;
+    @include lg {
+      padding: 100px 10px;
+    }
+    @include xl {
+      padding: 100px 0;
+    }
+    .subscribe-form {
+      width: 100%;
+      @include xl {
+        padding-right: 50px;
+        width: 65%;
+      }
+    }
+    .subscribe-img {
+      width: 35%;
+      display: none;
+      @include xl {
+        display: block;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.email-input {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: white;
+  margin-bottom: 15px;
+  @include md {
+    width: 80%;
+    flex-wrap: nowrap;
+  }
+  input[type="email"] {
+    font-size: 18px;
+    height: 70px;
+    width: 100%;
+    padding-left: 20px;
+    border: none;
+    outline: none;
+    @include md {
+      width: 70%;
+    }
+  }
+  input[type="submit"] {
+    width: 100%;
+    border: none;
+    height: 70px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    background: $primary;
+    cursor: pointer;
+    @include md {
+      width: 30%;
+    }
+  }
+}

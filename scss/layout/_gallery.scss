@@ -1,0 +1,22 @@
+.gallery {
+  @include md {
+    display: flex;
+    overflow-x: hidden;
+  }
+}
+.gallery-box {
+  width: 100%;
+  padding: 0 12px;
+  @include md {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  img {
+    width: 100%;
+    vertical-align: top;
+    @include md {
+      width: 200px;
+    }
+  }
+}
