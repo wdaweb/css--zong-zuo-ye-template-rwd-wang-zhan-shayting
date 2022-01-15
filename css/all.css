@@ -744,7 +744,7 @@ h6 {
 
 #aside .aside-content .aside-content-inner img {
   width: 100%;
-  margin: 50px 0 26px;
+  margin: 0px 0 26px;
 }
 
 #aside .aside-content .aside-content-inner p {
@@ -758,6 +758,7 @@ h6 {
 #aside .aside-content .aside-content-inner h6 {
   color: #94ffc4;
   margin-bottom: 15px;
+  opacity: 1;
 }
 
 @media (min-width: 992px) {

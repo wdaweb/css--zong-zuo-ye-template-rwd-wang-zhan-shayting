@@ -253,7 +253,7 @@
       width: 335px;
       img {
         width: 100%;
-        margin: 50px 0 26px;
+        margin: 0px 0 26px;
       }
       p {
         line-height: 1.5;
@@ -264,6 +264,7 @@
       h6 {
         color: $primary;
         margin-bottom: 15px;
+        opacity: 1;
       }
     }
     @include lg {
